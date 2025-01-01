@@ -1,6 +1,5 @@
 import type { ResponseEvents } from "@/types/response";
 import type { Metadata } from "next";
-import getCurrentHost from "@/utils/getCurrentHost";
 import toWork from "@/maps/toWork";
 import Work from "@/components/work";
 

@@ -14,8 +14,7 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const eventsPath = await getCurrentHost("/api/events");
-  const req = await fetch(eventsPath);
+  const req = await fetch(`https://${process.env.VERCEL_URL}/api/events`);
   const res: ResponseEvents = await req.json();
   const works = res.sheets.map(toWork);
 

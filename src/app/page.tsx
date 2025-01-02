@@ -18,7 +18,7 @@ export default async function Home() {
   const works = res.sheets.map(toWork);
 
   return (
-    <section className="container mx-auto mt-20">
+    <section className="container mx-auto mt-20 px-4">
       <h2 className="text-6xl font-bold">Roadmap</h2>
       <p className="mt-4 mx-1">
         Estos son los eventos que vamos a traducir durante los siguientes años

@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import Documentation from "@/icons/documentation";
-import Roadmap from "@/icons/roadmap";
 import { ThemeSwitch } from "./dyanmic";
 import Github from "@/icons/github";
 

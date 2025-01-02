@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import Documentation from "@/icons/documentation";
 import Roadmap from "@/icons/roadmap";
-import { SwitchTheme } from "./switch";
+import { ThemeSwitch } from "./dyanmic";
 
 const Navigation: React.FC<Navigation> = () => {
   return (
@@ -33,7 +33,7 @@ const Navigation: React.FC<Navigation> = () => {
               <Documentation />
             </Link>
           </li>
-          <SwitchTheme />
+          <ThemeSwitch />
         </ul>
       </nav>
     </header>

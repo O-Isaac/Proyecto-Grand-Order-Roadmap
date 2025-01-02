@@ -13,7 +13,9 @@ export const metadata: Metadata = {
 };
 
 export default async function Home() {
-  const req = await fetch(`https://services.proyectograndorder.es/api/events`);
+  const req = await fetch(`https://services.proyectograndorder.es/api/events`, {
+    next: { revalidate: 60 },
+  });
   const res: ResponseEvents = await req.json();
   const works = res.sheets.map(toWork);
 

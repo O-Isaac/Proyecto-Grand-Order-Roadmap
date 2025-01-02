@@ -6,6 +6,7 @@ import Image from "next/image";
 import Documentation from "@/icons/documentation";
 import Roadmap from "@/icons/roadmap";
 import { ThemeSwitch } from "./dyanmic";
+import Github from "@/icons/github";
 
 const Navigation: React.FC<Navigation> = () => {
   return (
@@ -24,13 +25,25 @@ const Navigation: React.FC<Navigation> = () => {
 
         <ul className="flex gap-2 items-center">
           <li>
-            <Link href="/">
-              <Roadmap />
+            <Link
+              className="flex gap-2 items-center"
+              href="https://proyectograndorder.es"
+            >
+              <Documentation />
+              <span className="text-sm hidden md:hidden lg:block text-neutral-300 hover:text-neutral-200 transition-colors">
+                Documentación
+              </span>
             </Link>
           </li>
           <li>
-            <Link href="https://proyectograndorder.es">
-              <Documentation />
+            <Link
+              className="flex gap-2 items-center"
+              href="https://github.com/O-Isaac/Proyecto-Grand-Order-Roadmap"
+            >
+              <Github />
+              <span className="text-sm hidden md:hidden lg:block text-neutral-300 hover:text-neutral-200 transition-colors">
+                Github
+              </span>
             </Link>
           </li>
           <ThemeSwitch />

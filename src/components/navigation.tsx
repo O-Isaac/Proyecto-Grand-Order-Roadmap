@@ -30,7 +30,7 @@ const Navigation: React.FC<Navigation> = () => {
               href="https://proyectograndorder.es"
             >
               <Documentation />
-              <span className="text-sm hidden md:hidden lg:block text-neutral-300 hover:text-neutral-200 transition-colors">
+              <span className="text-sm hidden md:hidden lg:block dark:text-neutral-300 dark:hover:text-neutral-200 transition-colors">
                 Documentación
               </span>
             </Link>
@@ -41,7 +41,7 @@ const Navigation: React.FC<Navigation> = () => {
               href="https://github.com/O-Isaac/Proyecto-Grand-Order-Roadmap"
             >
               <Github />
-              <span className="text-sm hidden md:hidden lg:block text-neutral-300 hover:text-neutral-200 transition-colors">
+              <span className="text-sm hidden md:hidden lg:block dark:text-neutral-300 dark:hover:text-neutral-200 transition-colors">
                 Github
               </span>
             </Link>

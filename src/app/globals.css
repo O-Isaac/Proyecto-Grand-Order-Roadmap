@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-hero {
+  mask-image: radial-gradient(
+    ellipse at top right,
+    black,
+    transparent,
+    transparent,
+    transparent
+  );
+}

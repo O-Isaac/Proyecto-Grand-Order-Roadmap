@@ -1,10 +1,11 @@
 import type { Navigation } from "@/types/navigation";
 
-import Documentation from "@/icons/documentation";
-import Roadmap from "@/icons/roadmap";
 import Link from "next/link";
 import Image from "next/image";
-import ThemeChanger from "./theme";
+
+import Documentation from "@/icons/documentation";
+import Roadmap from "@/icons/roadmap";
+import { SwitchTheme } from "./switch";
 
 const Navigation: React.FC<Navigation> = () => {
   return (
@@ -32,7 +33,7 @@ const Navigation: React.FC<Navigation> = () => {
               <Documentation />
             </Link>
           </li>
-          <ThemeChanger />
+          <SwitchTheme />
         </ul>
       </nav>
     </header>

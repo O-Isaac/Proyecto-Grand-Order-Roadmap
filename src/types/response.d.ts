@@ -1,6 +1,8 @@
 export interface Event {
   event: string;
   status: "Trabajando" | "Planeado" | "Skip" | "Completado";
+  lines: number;
+  completed: number;
 }
 
 export interface Sheet {

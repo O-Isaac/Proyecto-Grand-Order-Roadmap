@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       },
       {
         hostname: "imgur.com"
+      },
+      {
+        hostname: "i.postimg.cc"
       }
     ]
   }

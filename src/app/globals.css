@@ -11,3 +11,7 @@
     transparent
   );
 }
+
+.fade-image {
+  mask-image: linear-gradient(to bottom, black, transparent);
+}

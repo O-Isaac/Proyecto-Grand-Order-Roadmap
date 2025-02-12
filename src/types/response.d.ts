@@ -3,6 +3,7 @@ export interface Event {
   status: "Trabajando" | "Planeado" | "Skip" | "Completado";
   lines: number;
   completed: number;
+  image: string;
 }
 
 export interface Sheet {

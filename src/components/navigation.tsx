@@ -12,7 +12,7 @@ import toWork from "@/maps/toWork";
 import toAnchorId from "@/utils/toAnchorId";
 import Roadmap from "@/icons/roadmap";
 
-async function Navigation(_: NavigationProps) {
+async function Navigation() {
   const req = await fetch("https://services.proyectograndorder.es/api/events", {
     next: { revalidate: 300 },
   });

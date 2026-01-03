@@ -1,4 +1,3 @@
-import type { Navigation as NavigationProps } from "@/types/navigation";
 import type { ResponseEvents } from "@/types/response";
 
 import Link from "next/link";

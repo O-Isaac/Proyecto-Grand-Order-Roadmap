@@ -1,9 +1,9 @@
 import type { Work } from "@/types/work";
 import Board from "./board";
 
-const Work: React.FC<Work> = ({ status, year }) => {
+const Work: React.FC<Work> = ({ status, year, anchorId }) => {
   return (
-    <details open className="mt-20">
+    <details id={anchorId} open className="mt-20">
       <summary className="text-6xl font-extrabold before:hidden">
         {year}
       </summary>

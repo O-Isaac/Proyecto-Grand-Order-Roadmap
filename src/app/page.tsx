@@ -2,6 +2,7 @@ import type { ResponseEvents } from "@/types/response";
 import type { Metadata } from "next";
 import toWork from "@/maps/toWork";
 import Work from "@/components/work";
+import toAnchorId from "@/utils/toAnchorId";
 
 export const metadata: Metadata = {
   title: "Proyecto Grand Order - Roadmap",
@@ -18,6 +19,10 @@ export default async function Home() {
   });
   const res: ResponseEvents = await req.json();
   const works = res.sheets.map(toWork);
+  const worksWithAnchors = works.map((work) => ({
+    ...work,
+    anchorId: toAnchorId(work.name),
+  }));
 
   return (
     <section className="container mx-auto mt-20 px-4">
@@ -26,9 +31,16 @@ export default async function Home() {
         Estos son los eventos que vamos a traducir durante los siguientes años
       </p>
 
-      {works.map((work) => (
-        <Work key={work.name} year={work.name} status={work.status} />
-      ))}
+      <div className="mt-10 space-y-12">
+        {worksWithAnchors.map((work) => (
+          <Work
+            key={work.name}
+            anchorId={work.anchorId}
+            year={work.name}
+            status={work.status}
+          />
+        ))}
+      </div>
     </section>
   );
 }

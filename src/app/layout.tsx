@@ -32,7 +32,7 @@ const RootLayout: React.FC<RootLayout> = ({ children }) => (
         scriptProps={{ "data-cfasync": "false" }}
         attribute="class"
       >
-        <Navigation items={[]} />
+        <Navigation />
         <main>{children}</main>
       </ThemeProvider>
     </body>
